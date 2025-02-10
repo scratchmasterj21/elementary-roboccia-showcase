@@ -3,10 +3,11 @@ import React from 'react';
 const Home: React.FC = () => {
   return (
     <div className="container mx-auto p-4">
-      <div className="text-center mb-4">
+      <div className="flex justify-center mb-4">
         <img
           src="https://i.imgur.com/J62VhlX.png"
           alt="Robotics Showcase"
+          style={{ width: '300px', height: 'auto' }}
         />
       </div>
       <div className="bg-gray-100 p-4 rounded shadow mb-4 text-center">

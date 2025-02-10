@@ -26,7 +26,7 @@ const Header: React.FC = () => {
             </li>
             <li>
               <Link to="/student-builds" className="flex items-center">
-                <Users className="mr-1" /> Student Builds
+                <Users className="mr-1" /> Builds
               </Link>
             </li>
           </ul>

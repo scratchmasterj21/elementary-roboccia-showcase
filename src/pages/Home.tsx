@@ -28,14 +28,14 @@ const Home: React.FC = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
         <div className="bg-white p-4 rounded shadow">
-          <img src="https://images.unsplash.com/photo-1581091220976-78e9c4d7fdac" alt="Robot Event" className="w-full h-48 object-cover rounded mb-2" />
-          <h2 className="text-xl font-semibold">Robot Event 1</h2>
-          <p className="text-gray-600">Description of the event...</p>
+          <img src="https://roboccia.com/wp-content/uploads/2022/04/top-01-001-1536x960.png" alt="Robot Event" className="w-full h-48 object-cover rounded mb-2" />
+          <h2 className="text-xl font-semibold">Roboccia Events</h2>
+          <p className="text-gray-600">Roboccia Cup Events</p>
         </div>
         <div className="bg-white p-4 rounded shadow">
-          <img src="https://images.unsplash.com/photo-1581091220976-78e9c4d7fdac" alt="Robot Event" className="w-full h-48 object-cover rounded mb-2" />
-          <h2 className="text-xl font-semibold">Robot Event 2</h2>
-          <p className="text-gray-600">Description of the event...</p>
+          <img src="https://roboccia.com/wp-content/uploads/2022/04/top-01-002-768x480.png" alt="Robot Event" className="w-full h-48 object-cover rounded mb-2" />
+          <h2 className="text-xl font-semibold">Felice Events</h2>
+          <p className="text-gray-600">Gunma Felice Academy Events</p>
         </div>
       </div>
 
@@ -45,12 +45,12 @@ const Home: React.FC = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="bg-white p-4 rounded shadow">
-          <img src="https://images.unsplash.com/photo-1581091220976-78e9c4d7fdac" alt="Robot Build" className="w-full h-48 object-cover rounded mb-2" />
+          <img src="https://prcdn.freetls.fastly.net/release_image/105988/1/105988-1-9efcd72ed9d298525c9d45b2a6374be6-3900x2925.jpg?format=jpeg&auto=webp&quality=85%2C65&width=1950&height=1350&fit=bounds" alt="Robot Build" className="w-full h-48 object-cover rounded mb-2" />
           <h2 className="text-xl font-semibold">Robot Build 1</h2>
           <p className="text-gray-600">Description of the build...</p>
         </div>
         <div className="bg-white p-4 rounded shadow">
-          <img src="https://images.unsplash.com/photo-1581091220976-78e9c4d7fdac" alt="Robot Build" className="w-full h-48 object-cover rounded mb-2" />
+          <img src="https://ascii.jp/img/2024/08/27/3786610/l/9b9e3baf4be4dc1a.jpg" alt="Robot Build" className="w-full h-48 object-cover rounded mb-2" />
           <h2 className="text-xl font-semibold">Robot Build 2</h2>
           <p className="text-gray-600">Description of the build...</p>
         </div>

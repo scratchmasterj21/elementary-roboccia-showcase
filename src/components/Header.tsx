@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Home, Calendar, Users } from 'lucide-react';
 
 const Header: React.FC = () => {
@@ -14,19 +15,19 @@ const Header: React.FC = () => {
         <nav className="ml-auto">
           <ul className="flex space-x-4">
             <li>
-              <a href="/" className="flex items-center">
+              <Link to="/" className="flex items-center">
                 <Home className="mr-1" /> Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/events" className="flex items-center">
+              <Link to="/events" className="flex items-center">
                 <Calendar className="mr-1" /> Events
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/student-builds" className="flex items-center">
+              <Link to="/student-builds" className="flex items-center">
                 <Users className="mr-1" /> Student Builds
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

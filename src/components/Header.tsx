@@ -26,14 +26,14 @@ const Header: React.FC = () => {
   return (
     <header className="bg-blue-500 text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img
             src="https://i.imgur.com/QTNsUY1.png"
             alt="School Logo"
             className="h-12 w-32 mr-2"
           />
           <div className="text-2xl font-bold">Robotics Showcase</div>
-        </div>
+        </Link>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden" ref={menuRef}>

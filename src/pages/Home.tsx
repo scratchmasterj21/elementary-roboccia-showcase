@@ -47,12 +47,12 @@ const Home: React.FC = () => {
         <div className="bg-white p-4 rounded shadow">
           <img src="https://prcdn.freetls.fastly.net/release_image/105988/1/105988-1-9efcd72ed9d298525c9d45b2a6374be6-3900x2925.jpg?format=jpeg&auto=webp&quality=85%2C65&width=1950&height=1350&fit=bounds" alt="Robot Build" className="w-full h-48 object-cover rounded mb-2" />
           <h2 className="text-xl font-semibold">Robot Build 1</h2>
-          <p className="text-gray-600">Description of the build...</p>
+          <p className="text-gray-600">Robot Thrower Build</p>
         </div>
         <div className="bg-white p-4 rounded shadow">
           <img src="https://ascii.jp/img/2024/08/27/3786610/l/9b9e3baf4be4dc1a.jpg" alt="Robot Build" className="w-full h-48 object-cover rounded mb-2" />
           <h2 className="text-xl font-semibold">Robot Build 2</h2>
-          <p className="text-gray-600">Description of the build...</p>
+          <p className="text-gray-600">Robot Long Thrower Buid</p>
         </div>
       </div>
     </div>

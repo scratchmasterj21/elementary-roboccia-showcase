@@ -7,17 +7,12 @@ import React from 'react';
 
           {/* Roboccia Events Section */}
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Roboccia Events</h2>
+            <h2 className="text-2xl font-semibold mb-4">2025 Roboccia Events</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               <div className="bg-white p-4 rounded shadow">
-                <h3 className="text-xl font-semibold">Roboccia Event 1</h3>
-                <p className="text-gray-600">Date: 2023-10-15</p>
-                <p className="text-gray-600">Description of the Roboccia event...</p>
-              </div>
-              <div className="bg-white p-4 rounded shadow">
-                <h3 className="text-xl font-semibold">Roboccia Event 2</h3>
-                <p className="text-gray-600">Date: 2023-11-20</p>
-                <p className="text-gray-600">Description of another Roboccia event...</p>
+                <h3 className="text-xl font-semibold">Roboccia Cup 3</h3>
+                <p className="text-gray-600">Date: 2025-03-16</p>
+                <p className="text-gray-600">Refer to the following website: <a href="https://roboccia.com/rjc2024-info1/">https://roboccia.com/rjc2024-info1/</a></p>
               </div>
             </div>
           </section>
@@ -27,19 +22,9 @@ import React from 'react';
             <h2 className="text-2xl font-semibold mb-4">Felice Events</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               <div className="bg-white p-4 rounded shadow">
-                <h3 className="text-xl font-semibold">Felice Event 1</h3>
-                <p className="text-gray-600">Date: 2023-12-01</p>
+                <h3 className="text-xl font-semibold">Felice Cup 1</h3>
+                <p className="text-gray-600">Date: 2026-01-20</p>
                 <p className="text-gray-600">Description of the Felice event...</p>
-              </div>
-              <div className="bg-white p-4 rounded shadow">
-                <h3 className="text-xl font-semibold">Felice Event 2</h3>
-                <p className="text-gray-600">Date: 2024-01-15</p>
-                <p className="text-gray-600">Description of another Felice event...</p>
-              </div>
-              <div className="bg-white p-4 rounded shadow">
-                <h3 className="text-xl font-semibold">Felice Event 3</h3>
-                <p className="text-gray-600">Date: 2024-02-28</p>
-                <p className="text-gray-600">Description of yet another Felice event...</p>
               </div>
             </div>
           </section>

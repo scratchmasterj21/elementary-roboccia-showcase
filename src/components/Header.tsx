@@ -54,9 +54,6 @@ const Header: React.FC = () => {
               <Link to="/student-builds" className="block py-2 px-4 text-white hover:bg-blue-600">
                 <Users className="inline-block mr-1" size={16} /> Builds
               </Link>
-              <Link to="/admin" className="block py-2 px-4 text-white hover:bg-blue-600">
-                <Building className="inline-block mr-1" size={16} /> Admin
-              </Link>
             </div>
           )}
         </div>
@@ -77,11 +74,6 @@ const Header: React.FC = () => {
             <li>
               <Link to="/student-builds" className="flex items-center py-2 px-3 hover:bg-blue-600 rounded">
                 <Users className="mr-1" /> Builds
-              </Link>
-            </li>
-            <li>
-              <Link to="/admin" className="flex items-center py-2 px-3 hover:bg-blue-600 rounded">
-                <Building className="mr-1" /> Admin
               </Link>
             </li>
           </ul>

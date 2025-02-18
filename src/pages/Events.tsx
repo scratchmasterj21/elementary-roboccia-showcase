@@ -28,9 +28,18 @@ const Events: React.FC = () => {
         return [...events].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
       };
 
-      setFeliceUpcomingEvents(sortByDate(eventsList.filter(event => event.category === 'feliceUpcoming')));
-      setRobocciaUpcomingEvents(sortByDate(eventsList.filter(event => event.category === 'robocciaUpcoming')));
-      setPastEvents(sortByDate(eventsList.filter(event => event.category === 'past')));
+      // Get current date in JST
+      const now = new Date();
+      const jstOffset = 9 * 60 * 60 * 1000; // JST is UTC+9
+      const jstDate = new Date(now.getTime() + jstOffset);
+
+      const upcomingFelice = eventsList.filter(event => event.category === 'feliceUpcoming' && new Date(event.date) >= jstDate);
+      const upcomingRoboccia = eventsList.filter(event => event.category === 'robocciaUpcoming' && new Date(event.date) >= jstDate);
+      const past = eventsList.filter(event => new Date(event.date) < jstDate);
+
+      setFeliceUpcomingEvents(sortByDate(upcomingFelice));
+      setRobocciaUpcomingEvents(sortByDate(upcomingRoboccia));
+      setPastEvents(sortByDate(past));
     };
 
     fetchEvents();

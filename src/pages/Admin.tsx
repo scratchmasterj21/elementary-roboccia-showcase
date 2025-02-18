@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { db, auth } from '../firebase';
+import { db } from '../firebase';
 import { collection, addDoc, getDocs, deleteDoc, doc, updateDoc } from 'firebase/firestore';
 import { Edit, Trash2, Save, X } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
 
 interface Event {
   id?: string;
@@ -27,31 +26,20 @@ const Admin: React.FC = () => {
     description: '',
     category: 'feliceUpcoming',
   });
-  const navigate = useNavigate();
 
   useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged(user => {
-      if (user && user.email === 'john.limpiada@felice.ed.jp') {
-        // User is authenticated and has the correct email, proceed to fetch events
-        const fetchEvents = async () => {
-          const eventsCollection = collection(db, 'events');
-          const eventsSnapshot = await getDocs(eventsCollection);
-          const eventsList: Event[] = eventsSnapshot.docs.map(doc => ({
-            id: doc.id,
-            ...doc.data()
-          })) as Event[];
-          setEvents(eventsList);
-        };
+    const fetchEvents = async () => {
+      const eventsCollection = collection(db, 'events');
+      const eventsSnapshot = await getDocs(eventsCollection);
+      const eventsList: Event[] = eventsSnapshot.docs.map(doc => ({
+        id: doc.id,
+        ...doc.data()
+      })) as Event[];
+      setEvents(eventsList);
+    };
 
-        fetchEvents();
-      } else {
-        // User is not authenticated or does not have the correct email, redirect to home
-        navigate('/');
-      }
-    });
-
-    return () => unsubscribe();
-  }, [navigate]);
+    fetchEvents();
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
